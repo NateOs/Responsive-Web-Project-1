@@ -46,8 +46,27 @@ img{
     width: 70%
 }
 
+
+
 .col-bg {
     background: #212514;
     padding: 1em;
     color: #fff
+}
+
+  @media (max-width: 600px) {
+      /* switching the axis around...*/
+
+    .columns {
+        flex-direction:column;
+    }
+    
+    /*this position is ideal for this query because it will
+ have been overwritten by the .col defs if it had been
+  put above them*/
+    .col-1,
+    .col-2,
+    .col-3 {
+        width: 100%;
+    }
 }
