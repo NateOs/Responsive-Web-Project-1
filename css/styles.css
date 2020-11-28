@@ -29,4 +29,11 @@ img{
 
 .columns {
     display: flex;
+    margin: 1em 0;
+}
+
+.col-bg {
+    background: #212514;
+    padding: 1em;
+    color: #fff
 }
