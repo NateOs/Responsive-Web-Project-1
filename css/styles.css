@@ -5,7 +5,6 @@
 .container {
     width: 90%;
     max-width: 900px;
-    border: 1px magenta solid;
 }
 
 .container-nav {
@@ -50,6 +49,31 @@ nav a:hover, nav a:focus {
 
 .current-page {
     border-bottom: 1px solid #707070
+}
+
+/*NavBar Media Query*****/
+
+@media (max-width: 675px) {
+    /* switching the axis around...*/
+
+  .container-nav {
+      flex-direction:column;
+  }
+
+  header {
+    text-align: center;
+  }
+}
+
+@media (max-width: 675px) {
+    /* switching the axis around...*/
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: .5em 0;
+    }
 }
 
 
@@ -130,3 +154,6 @@ img{
         width: 100%;
     }
 }
+
+/*Responsive Nav*****
+********************/
