@@ -2,8 +2,18 @@
 *******************/
 
 /* Navbar*/
+.container {
+    width: 90%;
+    max-width: 900px;
+    border: 1px magenta solid;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 header {
-    text-align: center;
     background: #f8f8f8;
 }
 
@@ -16,10 +26,10 @@ nav ul {
 }
 
 nav li {
-    margin: 0 1em;
+    margin-left: 2em;
 }
 
-nav a {
+nav a { 
     text-decoration: none;
     color:#707070;
     font-weight: 700;
@@ -55,12 +65,13 @@ body {
 
 /*Typography*/
 
-h1{
+h1 {
     font-size: 3rem;
     color: #212514;
     text-align:center;
     margin: 0;
 }
+
 
 h1 span{
     color: #b7832f;
